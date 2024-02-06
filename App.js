@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     flex: 5
   },
   goalItem: {
-    margin: 8,
+    margin: 7,
     padding: 8,
     borderRadius: 6,
     backgroundColor: '#5e0acc'
