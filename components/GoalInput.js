@@ -10,17 +10,22 @@ function GoalInput({ addGoalHandler}) {
 
     function goalInputHandler(enteredText) {
         setEnteredGoalText(enteredText);
+       
       }
 
     function addGoalClick() {
         addGoalHandler(enteredGoalText);
+        setEnteredGoalText('')
     }
 
     
     return (
     <View style={styles.inputCountainer}>
-        <TextInput style={styles.textInput} placeholder='Your course goal!'
-        onChangeText={goalInputHandler}
+        <TextInput 
+            style={styles.textInput}
+            placeholder='Your course goal!'
+            onChangeText={goalInputHandler}
+            value={enteredGoalText}
         />
         <Button onPress={addGoalClick} title='Add goal'/>
     </View>
